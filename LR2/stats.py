@@ -1,6 +1,5 @@
-def mode():
-    fileName = input("Enter the file name: ")
-    f = open(fileName, 'r')
+def mode(fname):
+    f = open(fname, 'r')
     
     # Input the text, convert its to words to uppercase, and
     # add the words to a list
@@ -31,9 +30,8 @@ def mode():
             print("The mode is", key)
             break
 
-def median():
-    fileName = input("Enter the file name: ")
-    f = open(fileName, 'r')
+def median(fname):
+    f = open(fname, 'r')
     
     # Input the text, convert it to numbers, and
     # add the numbers to a list
@@ -52,9 +50,8 @@ def median():
     else:
         print((numbers[midpoint] + numbers[midpoint - 1]) / 2)
 
-def mean():
-    fileName = input("Enter the file name: ")
-    f = open(fileName, 'r')
+def mean(fname):
+    f = open(fname, 'r')
     numbers = []
     for line in f:
         words = line.split()
@@ -67,8 +64,9 @@ def mean():
     print("The mean is", mean)
 
 def main():
-    mean()
-    median()
-    mode()
+    fname = input("Enter the file name: ")
+    mean(fname)
+    median(fname)
+    mode(fname)
 
 main()
