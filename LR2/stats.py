@@ -1,3 +1,9 @@
+'''
+Author: Malayao, Jimwell G.
+stats.py
+CPE106L B1 Group 7
+'''
+
 def mode(fname):
     f = open(fname, 'r')
     
