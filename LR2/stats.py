@@ -66,7 +66,7 @@ def mean(fname):
     mean = 0
     for i in numbers:
         mean += i
-        mean /= 2
+    mean /= len(numbers)
     print("The mean is", mean)
 
 def main():
