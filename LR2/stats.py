@@ -66,7 +66,9 @@ def mean():
         mean /= 2
     print("The mean is", mean)
 
+def main():
+    mean()
+    median()
+    mode()
 
-mean()
-median()
-mode()
+main()
