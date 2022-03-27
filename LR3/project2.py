@@ -1,4 +1,4 @@
-﻿from LR3 import Student
+﻿from student import Student
 import random
 
 def main():
