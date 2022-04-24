@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>253</y>
+      <w>209</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>ParticipantNum
+--
+LastName (SK)
+FirstName
+Address
+City
+State
+PostalCode
+PhoneNum
+DateOfBirth</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>352</x>
+      <y>220</y>
+      <w>99</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Participants</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>242</y>
+      <w>209</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>ClassNum
+--
+ClassDescription (SK)
+MasNumOfPersons
+ClassFee</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>737</x>
+      <y>209</y>
+      <w>99</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Class</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>462</x>
+      <y>583</y>
+      <w>231</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>ClassNum (FK)
+ParticipantNum (FK)
+--
+Date (SK)
+ActualParticipant</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>682</x>
+      <y>594</y>
+      <w>22</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>451</x>
+      <y>594</y>
+      <w>22</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>407</x>
+      <y>440</y>
+      <w>88</w>
+      <h>187</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>60.0;150.0;10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>671</x>
+      <y>319</y>
+      <w>132</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;260.0;100.0;260.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>506</x>
+      <y>550</y>
+      <w>132</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>ClassParticipant</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
