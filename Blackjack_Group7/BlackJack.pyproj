@@ -2,15 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>042e1ced-7e78-4c21-87f8-06d32048845c</ProjectGuid>
+    <ProjectGuid>c066d449-1d1c-4a5f-950b-ef9cd6a1b58e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>Blackjack_Group7.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Blackjack_Group7</Name>
-    <RootNamespace>Blackjack_Group7</RootNamespace>
+    <Name>BlackJack</Name>
+    <RootNamespace>BlackJack</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda39-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +23,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Blackjack_Group7.py" />
-    <Compile Include="Classes.py" />
+    <Compile Include="CardObjects.py" />
+    <Compile Include="dealer.py" />
+    <Compile Include="player.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda39-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
